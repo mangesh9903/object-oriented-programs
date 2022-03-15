@@ -8,4 +8,5 @@ public interface StockAccount {
 
     void addStock(List<Stock> stockList);
 
+    void deleteStock(List<Stock> stockList);
 }

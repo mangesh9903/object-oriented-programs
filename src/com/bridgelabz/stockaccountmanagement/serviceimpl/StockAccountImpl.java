@@ -22,4 +22,16 @@ public class StockAccountImpl implements StockAccount {
 
         stockList.add(stock);
     }
+
+    @Override
+    public void deleteStock(List<Stock> stockList) {
+        System.out.println("Enter the Stock Name that you want to delete.");
+        String stockName = scanner.next();
+        for (int index = 0; index < stockList.size(); index++) {
+            if (stockList.get(index).getStockName().equals(stockName)) {
+                stockList.remove(index);
+            }
+        }
+    }
+
 }
