@@ -29,4 +29,13 @@ public class Stock {
     public void setNumberOfShare(int numberOfShare) {
         this.numberOfShare = numberOfShare;
     }
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "stockName='" + stockName + '\'' +
+                ", price=" + price +
+                ", numberOfShare=" + numberOfShare +
+                '}';
+    }
 }
